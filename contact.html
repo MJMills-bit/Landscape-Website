@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="contactstyle.css" />
+    <title>ONE WITH NATURE</title>
+  </head>
+
+  <body>
+    <div class="nav-container">
+      <img src="./Garden pic/logo ONE WITH NATURE.jpg" alt="" class="logo" />
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="#service-container">SERVICES</a></li>
+        <li><a href="#gallery">GALLERY</a></li>
+        <li><a href="#blog__heading">BLOG</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+
+    <form id="contact-form" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" />
+
+      <label for="reason">Reason for Contact:</label>
+      <select id="reason" name="reason">
+        <option value="support">Support</option>
+        <option value="sales">Sales</option>
+        <option value="feedback">Feedback</option>
+      </select>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button class="btn" onclick="handleFormSubmission()">Click me</button>
+      <!-- <input type="submit" value="Submit" /> -->
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>

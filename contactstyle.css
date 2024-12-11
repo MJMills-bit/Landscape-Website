@@ -1,0 +1,59 @@
+body {
+  box-sizing: border-box;
+  background: url("Garden pic/Flower background.jpg");
+  background-size: cover;
+}
+
+/* Form container styling */
+form {
+  background: linear-gradient(#35510c, #618806, #000000);
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 600px;
+  height: auto;
+  margin: auto;
+  color: #fff; /* Default text color for labels */
+  top: 20px;
+  position: relative;
+}
+
+/* Label styling */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* Input and textarea styling */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #000; /* Text color for input fields */
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* Submit button styling */
+input[type="submit"] {
+  background-color: darkgreen;
+  color: #fff; /* Text color for submit button */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Submit button hover effect */
+input[type="submit"]:hover {
+  background-color: #6df76d;
+}
