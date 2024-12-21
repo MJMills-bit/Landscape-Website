@@ -5,17 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap" rel="stylesheet">
+    
     <title>ONE WITH NATURE</title>
 </head>
-
 <body>
 
-
     <div class="nav-container">
-        <img src="./Garden pic/logo ONE WITH NATURE.jpg" alt="" class="logo">
-        <ul>
+        <img src="./Garden pic/logo ONE WITH NATURE.jpg" alt="logo" class="logo">
+        <ul class="nav-items" id="nav-menu">
             <li><a href="index.html">HOME</a></li>
             <li><a href="about.html">ABOUT US</a></li>
             <li><a href="#service-container">SERVICES</a></li>
@@ -23,145 +22,134 @@
             <li><a href="blogs.html">BLOG</a></li>
             <li><a href="contact.html">CONTACT</a></li>
         </ul>
+        <div class="hamburger" id="hamburger"> ☰ </div>
     </div>
     
 
-<div class="container">
+    <div class="container">
+        <div class="heading">
+            <h1 id="hoverTitle">
+                One with NATURE</br>Landscape artists 
+            </h1>
+        </div>
+        <div>
+            <h4> Let us create a space where your spirit can be free</h4>
+        </div>
 
-    <div class="heading">
-        <h1 id="hoverTitle">
-            One with NATURE</br>Landscape artists 
-        </h1>
-    </div>
-    <div>
-        <h4> Let us create a space where your spirit can be free</h4>
+        <div class="button-container">
+            <button class="btn" ><a href="#service-container">Learn more</a></button>
+            <button class="btn" ><a href="#gallery"> our work </a></button>
+        </div>
     </div>
 
-    <div class="button-container">
-        <button class="btn" ><a href="#service-container">Learn more</a></button>
-        <button class="btn" ><a href="#gallery"> our work </a></button>
-    </div>
-</div>
+    <div class="service-container" id="service-container">
+        <h2 class="services">Services offered</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="Garden pic/Card 1.jpg" alt="Garden of roses design for a customer" class="card-img">
+                <div class="card-content">
+                    <p>Designing beautiful garden landscapes</p>
+                    <a href="services.html#card-container1" class="learn-more">Learn More</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Garden pic/Glasshouse building.jpg" alt="Image of a glasshouse constructed for a client" class="card-img">
+                <div class="card-content">
+                    <p>Building garden structures </p>
+                    <a href="services.html#card-container2" class="learn-more">Learn More</a>
+                </div>
+            </div>        
+            <div class="card">
+                <img src="Garden pic/Paving services.jpg" alt="Garden of roses done for a customer" class="card-img">
+                <div class="card-content">
+                    <p>Designing and building paving walkways</p>
+                    <a href="services.html#card-container3" class="learn-more">Learn More</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Garden pic/Water pond.jpg" alt="Garden of roses done for a customer" class="card-img">
+                <div class="card-content">
+                    <p>Amazing water features</p>
+                    <a href="services.html#card-container4" class="learn-more">Learn More</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Garden pic/Veg garden.jpg" alt="Garden of roses done for a customer" class="card-img">
+                <div class="card-content">
+                    <p>Advising on sustainable gardening practices</p>
+                    <a href="services.html#card-container5" class="learn-more">Learn More</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Garden pic/Design one of a kind.jpg" alt="Garden of roses done for a customer" class="card-img">
+                <div class="card-content">
+                    <p>Making your vision a reality</p>
+                    <a href="services.html#card-container6" class="learn-more">Learn More</a>
+                </div>
+            </div>
+        </div>
 
-<div class="service-container" id="service-container">
-    <h2 class="services">Services offered</h2>
-<div class="card-container">
+        <h2 class="gallery" id="gallery">Gallery</h2>
+
+        <div class="slider">
+            <div class="slide">
+                <img src="Garden pic/Topiary garden.jpg" alt="" />
+                <div class="caption">A fantastic example of a modern topiary design</div>
+            </div>
+            <div class="slide"><img src="Garden pic/Hobbit home.jpg" alt="" />
+                <div class="caption">A little piece of imagination brought to life</div>
+            </div>
+            <div class="slide"><img src="Garden pic/Edge trimming and lawn maintenance landscape.jpg" alt=""/>
+                <div class="caption">Making the basics of gardening look amazing</div>
+            </div>
+            <button class="slider__btn slider__btn--left">&larr;</button>
+            <button class="slider__btn slider__btn--right">&rarr;</button>
+            <div class="dots"></div>
+        </div>
+    </div>
+
+    <h2 class="blog__heading" id="blog__heading">Blogs</h2>
+
+    <div class="blog-section">
+        <div class="blog-post">
+            <img src="Garden pic/Garden prep blog.jpg" alt="">
+            <p><span class="blog__headings">Beautiful hard work</span></p>
+            <a class="read-more-btn" href="blogs.html#blog-section-post1">Read More</a>
+        </div>
+        <div class="blog-post">
+            <img src="Garden pic/Exotic garden blog.jpg" alt="">
+            <p><span class="blog__headings">Exotic gardens</span></p>
+            <a class="read-more-btn" href="blogs.html#blog-section-post2">Read More</a>
+        </div>
+        <div class="blog-post">
+            <img src="Garden pic/Painting nature blog.jpg" alt="">
+            <p><span class="blog__headings">Garden art</span></p>
+            <a class="read-more-btn" href="blogs.html#blog-section-post3">Read More</a>
+        </div>
+    </div>
     
-    <div class="card">
-        <img src="Garden pic/Card 1.jpg" alt="Garden of roses design for a customer" class="card-img">
-        <div class="card-content">
-            <p>Designing beautiful garden landscapes</p>
-            <a href="services.html#card-container1" class="learn-more">Learn More</a>
+    <footer>
+        <div class="footer-container">
+            <div class="contact-details">
+                <h3>Contact Us</h3>
+                <p>Email: info@gardenwebsite.com</p>
+                <p>Phone: +27 21 123 4567</p>
+                <p>Address: 123 Garden Lane, Cape Town, South Africa</p>
+            </div>
+            <div class="garden-icons">
+                <h3>Follow Us</h3>
+                <div class="icons">
+                    <img src="Garden pic/Field.512.png" alt="Icon 1">
+                    <img src="Garden pic/Maps-Compass.512.png" alt="Icon 2">
+                    <img src="Garden pic/Garden-Gloves.512.png" alt="Icon 3">
+                    <img src="Garden pic/Hand-Planting.512.png" alt="Icon 4">
+                    <img src="Garden pic/Hex-Burner.512.png" alt="Icon 5">
+                    <img src="Garden pic/Farm.512.png" alt="Icon 6">
+                </div>
+            </div>
         </div>
-        </div>
-    <div class="card">
-        <img src="Garden pic/Glasshouse building.jpg" alt="Image of a glasshouse constructed for a client" class="card-img">
-        <div class="card-content">
-            <p>Building garden structures </p>
-            <a href="services.html#card-container2" class="learn-more">Learn More</a>
-        </div>
-    </div>        
-        <div class="card">
-        <img src="Garden pic/Paving services.jpg" alt="Garden of roses done for a customer" class="card-img">
-        <div class="card-content">
-            <p>Designing and building paving walkways</p>
-            <a href="services.html#card-container3" class="learn-more">Learn More</a>
-        </div>
-    </div>
-        <div class="card">
-        <img src="Garden pic/Water pond.jpg" alt="Garden of roses done for a customer" class="card-img">
-        <div class="card-content">
-            <p>Amazing water features</p>
-            <a href="services.html#card-container4" class="learn-more">Learn More</a>
-        </div>
-    </div>
-        <div class="card">
-        <img src="Garden pic/Veg garden.jpg" alt="Garden of roses done for a customer" class="card-img">
-        <div class="card-content">
-            <p>Advising on sustainable gardening practices</p>
-            <a href="services.html#card-container5" class="learn-more">Learn More</a>
-        </div>
-    </div>
-        <div class="card">
-        <img src="Garden pic/Design one of a kind.jpg" alt="Garden of roses done for a customer" class="card-img">
-        <div class="card-content">
-            <p>Making your vision a reality</p>
-            <a href="services.html#card-container6" class="learn-more">Learn More</a>
-        </div>
-    </div>
-</div>
+    </footer>
 
-
-<h2 class="gallery" id="gallery">Gallery</h2>
-
-
-    <div class="slider" >
-      <div class="slide">
-        <img src="Garden pic/Topiary garden.jpg" alt="" />
-        <div class="caption">A fantastic example of a modern topiary design</div>
-        </div>
-
-        <div class="slide"><img src="Garden pic/Hobbit home.jpg" alt="" />
-            <div class="caption">A little piece of imagination brought to life</div>
-        </div>
-        
-        <div class="slide"><img src="Garden pic/Edge trimming and lawn maintenance landscape.jpg" alt=""/>
-        <div class="caption">Making the basics of gardening look amazing</div>
-        </div>
-        
-        <button class="slider__btn slider__btn--left">&larr;</button>
-        <button class="slider__btn slider__btn--right">&rarr;</button>
-        <div class="dots"></div>
-      </div>
-      
-    </div>
-  
-<h2 class="blog__heading" id="blog__heading">Blogs</h2>
-
-<div class="blog-section">
-    <div class="blog-post">
-        <img src="Garden pic/Garden prep blog.jpg" alt="">
-        <p><span class="blog__headings">Beautiful hard work</span></p>
-        
-        <a class="read-more-btn" href="blogs.html#blog-section-post1">Read More</a>
-    </div>
-    <div class="blog-post">
-        <img src="Garden pic/Exotic garden blog.jpg" alt="">
-        <p><span class="blog__headings">Exotic gardens</span></p>
-        
-        <a class="read-more-btn" href="blogs.html#blog-section-post2">Read More</a>
-    </div>
-    <div class="blog-post">
-        <img src="Garden pic/Painting nature blog.jpg" alt="">
-        <p><span class="blog__headings">Garden art</span></p>
-        
-        <a class="read-more-btn" href="blogs.html#blog-section-post3">Read More</a>
-    </div>
-</div>
-<script src="script.js"></script>
+    <script src="script.js"></script>    
 </body>
- <footer>
-
-    <div class="footer-container">
-        <div class="contact-details">
-          <h3>Contact Us</h3>
-          <p>Email: info@gardenwebsite.com</p>
-          <p>Phone: +27 21 123 4567</p>
-          <p>Address: 123 Garden Lane, Cape Town, South Africa</p>
-        </div>
-        <div class="garden-icons">
-          <h3>Follow Us</h3>
-          <div class="icons">
-            <img src="Garden pic/Field.512.png"Icon 1">
-            <img src="Garden pic/Maps-Compass.512.png" alt="Icon 2">
-            <img src="Garden pic/Garden-Gloves.512.png" alt="Icon 3">
-            <img src="Garden pic/Hand-Planting.512.png" alt="Icon 4">
-            <img src="Garden pic/Hex-Burner.512.png" alt="Icon 5">
-            <img src="Garden pic/Farm.512.png" alt="Icon 6">
-          </div>
-        </div>
-      </div>
-
- </footer>
-<script src="script.js"></script>
 </html>

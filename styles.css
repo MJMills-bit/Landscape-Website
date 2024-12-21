@@ -3,6 +3,9 @@ body {
   height: 100%;
   margin: 0;
   scroll-behavior: smooth;
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
 }
 
 .container {
@@ -27,8 +30,10 @@ body {
 .nav-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   background: linear-gradient(#35510c, #618806, #000000);
   padding: 10px 20px;
+  width: 100vw;
 }
 
 .logo {
@@ -69,13 +74,36 @@ body {
   border-radius: 10px;
 }
 
+.nav-items {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-items li {
+  margin: 0 10px;
+}
+.nav-items li a {
+  color: white;
+  font-size: 2em;
+  text-decoration: none;
+  padding: 14px 20px;
+  transition: background-color 0.3s ease;
+  border-radius: 10px;
+}
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
 .heading {
   box-shadow: 5px 10px rgba(0, 0, 0, 0.5);
-  margin: 16px auto;
+  margin: auto;
   background: url("Garden pic/heading background.jpg") no-repeat center center
     fixed;
-  max-width: 600px;
-  width: 600px;
+  max-width: 60%;
+  width: 95vw;
   height: auto;
   border-radius: 50px;
   padding: 50px;
@@ -144,13 +172,14 @@ h4 {
 
 .btn {
   display: inline-block;
-  padding: 8px 16px;
+  padding: 20px;
   background-color: darkgreen;
   color: #fff;
   text-decoration: none;
   border-radius: 4px;
   transition: background-color 0.3s;
   font-weight: bold;
+  font-size: 1em;
 }
 
 a {
@@ -615,6 +644,7 @@ footer {
   text-align: left;
   font-size: 1.5em;
   margin: 0;
+  width: 100vw;
 }
 
 .footer-container {
@@ -640,4 +670,136 @@ footer {
 .icons img:hover {
   transform: scale(1.1);
   transition: transform 0.2s;
+}
+
+/*--------------------MEDIA QUERIES-----------------------*/
+@media only screen and (min-width: 1024px) {
+  body {
+    font-size: 18px;
+  }
+
+  .container {
+    padding-top: 100px;
+  }
+
+  .nav-container ul {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .card-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .blog-post,
+  .blog-post-1,
+  .blog-post-2,
+  .blog-post-3 {
+    width: calc(33.333% - 40px);
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    font-size: 16px;
+  }
+
+  .container {
+    padding-top: 80px;
+  }
+
+  .nav-container ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .blog-post,
+  .blog-post-1,
+  .blog-post-2,
+  .blog-post-3 {
+    width: calc(50% - 20px);
+  }
+}
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+
+  .container {
+    padding-top: 60px;
+  }
+  .heading {
+    width: auto;
+  }
+
+  .hamburger {
+    display: block;
+    scale: 4;
+    margin: 50px;
+  }
+  .nav-items li a:hover,
+  .hamburger:hover span {
+    background-color: #6df76d;
+    color: #000;
+  }
+
+  .nav-container ul {
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    overflow: hidden;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .card-1 img,
+  .card-2 img,
+  .card-3 img,
+  .card-4 img,
+  .card-5 img,
+  .card-6 img {
+    width: 100%;
+    height: 200px;
+    float: none;
+  }
+
+  .card-content-1 p,
+  .card-content-2 p,
+  .card-content-3 p,
+  .card-content-4 p,
+  .card-content-5 p,
+  .card-content-6 p {
+    font-size: inherit;
+  }
+
+  .blog-post,
+  .blog-post-1,
+  .blog-post-2,
+  .blog-post-3 {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  /* h1,
+  h2,
+  h3,
+  h4 {
+    font-size: 1.5em;
+    margin: auto;
+  } */
+
+  .slider img {
+    width: 300px;
+  }
+
+  .dots {
+    bottom: 10px;
+  }
 }

@@ -81,13 +81,12 @@ let slider = function () {
     }
   });
 };
-
 slider();
 
 function handleFormSubmission() {
   const form = document.getElementById("contact-form");
-  form.addEventListener("submit", function (event) {
-    event.preventDefault(); // Prevent the default form submission
+  form.addEventListener("submit", function (e) {
+    e.preventDefault(); // Prevent the default form submission
 
     // Get form data
     const name = document.getElementById("name").value;
@@ -111,9 +110,27 @@ function handleFormSubmission() {
   });
 }
 
-// Call the function to attach the event listener
-handleFormSubmission();
-
 function myFunction() {
   alert("Button was clicked!");
 }
+// Call the function to attach the event listener
+// handleFormSubmission();
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   const hamburger = document.querySelector(".hamburger");
+//   const navItems = document.querySelector(".nav-items");
+
+//   hamburger.addEventListener("click", function () {
+//     navItems.classList.toggle("active").add("active");
+//   });
+// });
+
+document.getElementById("hamburger").addEventListener("click", function () {
+  const navMenu = document.getElementById("nav-menu");
+
+  if (navMenu.style.display === "block") {
+    navMenu.style.display = "none";
+  } else {
+    navMenu.style.display = "block";
+  }
+});
